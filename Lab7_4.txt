@@ -1,0 +1,19 @@
+import java.util.Map;
+import java.util.HashMap;
+
+public class ECommercePlatform {
+    private Map<Integer, User> users;
+    private Map<Integer, Product> products;
+    private Map<Integer, Order> orders;
+
+    public ECommercePlatform() {
+        this.users = new HashMap<>();
+        this.products = new HashMap<>();
+        this.orders = new HashMap<>();
+    }
+
+
+    public void updateStock(Product product, int newStock) {
+        product.setStock(newStock);
+    }
+}
